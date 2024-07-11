@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>LoadFunctionLibrary</Name>
+    <Description>LoadFunctionLibrary function passed</Description>
+    <StartTime>2024-05-31 16:53:33</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>1fbf476ad1d6434c9d926ad4630026bc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\a67bb5ad-3c39-4d98-9399-84533b276a96.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Login or Create Account.Tap</Name>
+    <Description />
+    <StartTime>2024-05-31 16:53:54</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileLabel</Type>
+            <Name><![CDATA[Login or Create Account]]></Name>
+          </Object>
+        </Path>
+        <Operation>Tap</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Login or Create Account Now]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[com.google.android.material.textview.MaterialTextView]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[46]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[Label]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>985b2741fc054eaa916d27f1c6db420b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\25747d95-1d58-4509-9b9d-2e4977007ecb.jpeg" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:53:49.157</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>et_enteruserid.SetFocus</Name>
+    <Description />
+    <StartTime>2024-05-31 16:54:13</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileEdit</Type>
+            <Name><![CDATA[et_enteruserid]]></Name>
+          </Object>
+        </Path>
+        <Operation>SetFocus</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[resourceid]]></Name>
+            <Value><![CDATA[et_enteruserid]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[androidx.appcompat.widget.AppCompatEditText]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[0]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[ispassword]]></Name>
+            <Value><![CDATA[True]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[hint]]></Name>
+            <Value><![CDATA[Enter user ID]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[Input]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>1ef9c4fcbd254340b267b7cd0de04d15</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\1b119063-18ce-4bb8-a8b9-a1de65a8be7a.jpeg" highlight="83,391,914,116" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:53:53.778</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>et_enteruserid.Set</Name>
+    <Description>"mate03"</Description>
+    <StartTime>2024-05-31 16:54:23</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileEdit</Type>
+            <Name><![CDATA[et_enteruserid]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["mate03"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[resourceid]]></Name>
+            <Value><![CDATA[et_enteruserid]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[androidx.appcompat.widget.AppCompatEditText]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[0]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[ispassword]]></Name>
+            <Value><![CDATA[True]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[hint]]></Name>
+            <Value><![CDATA[Enter user ID]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[Input]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>1ef9c4fcbd254340b267b7cd0de04d15</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\1875608e-7f06-4188-893f-a84b4ee47c0d.jpeg" highlight="83,391,914,116" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:54:12.487</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Login.Tap</Name>
+    <Description />
+    <StartTime>2024-05-31 16:54:31</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileButton</Type>
+            <Name><![CDATA[Login]]></Name>
+          </Object>
+        </Path>
+        <Operation>Tap</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Login]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[resourceid]]></Name>
+            <Value><![CDATA[btn_next]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[com.google.android.material.button.MaterialButton]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[0]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[Button]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>92f6ac01e7004daab4f128fb3af04aa4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\1a464aac-7130-4929-9be7-e299d5063867.jpeg" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:54:22.470</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.SetContext</Name>
+    <Description>Set context Device("[ Device ]") for AIUtil</Description>
+    <StartTime>2024-05-31 16:54:48</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>AIUtil</NodeType>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\8a7a2f94-4310-4433-b957-faef021d00e2.jpeg" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:54:31.242</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Pay").Click</Name>
+    <Description />
+    <StartTime>2024-05-31 16:55:01</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Pay")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>99.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[[ Device ]]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Pay")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Pay]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>fd735b6e0cf946fa98ea2d8f60568bce</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\9c957846-be2b-45ac-aed6-33416eea38c5.jpeg" highlight="518,1984,45,27" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:54:49.512</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Send Money").Click</Name>
+    <Description />
+    <StartTime>2024-05-31 16:55:09</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Send Money")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>99.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[[ Device ]]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Send Money")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Send Money]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>fd735b6e0cf946fa98ea2d8f60568bce</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\1203aca2-6526-42f4-9a32-a7fa9604a453.jpeg" highlight="168,1913,159,28" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:55:07.247</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil("down_triangle").Click</Name>
+    <Description />
+    <StartTime>2024-05-31 16:55:18</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil("down_triangle")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>76.98</AIMatchScore>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[[ Device ]]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil("down_triangle")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[control_class]]></Name>
+            <Value><![CDATA[down_triangle]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>fd735b6e0cf946fa98ea2d8f60568bce</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\7ac4a211-96e5-4338-a8d3-113c51314cbc.jpeg" highlight="900,497,53,43" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:55:16.332</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Icon Search.Tap</Name>
+    <Description />
+    <StartTime>2024-05-31 16:55:21</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileButton</Type>
+            <Name><![CDATA[Icon Search]]></Name>
+          </Object>
+        </Path>
+        <Operation>Tap</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[resourceid]]></Name>
+            <Value><![CDATA[ib_search]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[androidx.appcompat.widget.AppCompatImageButton]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[1]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[ImageButton]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[accessibilityid]]></Name>
+            <Value><![CDATA[Icon Search]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>92f6ac01e7004daab4f128fb3af04aa4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\1d1a5c0c-bfdf-4df7-934f-cb1bd95d51cb.jpeg" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:55:19.947</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>et_search.Set</Name>
+    <Description>"XTRA SAVERS"</Description>
+    <StartTime>2024-05-31 16:55:29</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+          <Object>
+            <Type>MobileEdit</Type>
+            <Name><![CDATA[et_search]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["XTRA SAVERS"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[resourceid]]></Name>
+            <Value><![CDATA[et_search]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[androidx.appcompat.widget.AppCompatEditText]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[mcindex]]></Name>
+            <Value><![CDATA[0]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[ispassword]]></Name>
+            <Value><![CDATA[False]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[hint]]></Name>
+            <Value><![CDATA[Type account name or number here]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[Input]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>1ef9c4fcbd254340b267b7cd0de04d15</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\b04eda73-8272-4b5c-bd24-b81201dc365b.jpeg" highlight="176,173,590,44" />
+    <DeviceInfo>
+      <DeviceTime>2024-05-31 16:55:21.022</DeviceTime>
+      <TimeZone>UTC+07:00 Western Indonesia Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>App [version {empty}]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Package Name:&lt;/td&gt;&lt;td style="text-align : left; font-size : 12px; "&gt;id.co.cimbniaga.mobile.android.release&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Version:&lt;/td&gt;&lt;td style="text-align : left; font-size : 12px; "&gt;{empty}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2024-05-31 16:53:54</StartTime>
+    <Duration>108</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[App]]></Name>
+          </Object>
+        </Path>
+        <Operation> [version {empty}]</Operation>
+        <OperationData><![CDATA[<table><tr><td style="text-align : left; font-size : 12px; font-weight : 600; ">Package Name:</td><td style="text-align : left; font-size : 12px; ">id.co.cimbniaga.mobile.android.release</td></tr><tr><td style="text-align : left; font-size : 12px; font-weight : 600; ">Version:</td><td style="text-align : left; font-size : 12px; ">{empty}</td></tr></table>]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[instrumented]]></Name>
+            <Value><![CDATA[True]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[identifier]]></Name>
+            <Value><![CDATA[id.co.cimbniaga.mobile.android.release]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>21e20f12409844148515e87f69dc8ca5</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Device [Xiaomi Redmi Note 8]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;ID: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;37a5cc0a&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Manufacturer: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Xiaomi&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Model: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Redmi Note 8&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Type: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;ANDROID&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Version: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;11&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Source: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;DL&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2024-05-31 16:53:54</StartTime>
+    <Duration>108</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation> [Xiaomi Redmi Note 8]</Operation>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">ID: </span><span style="text-align : left; font-size : 12px; ">37a5cc0a</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Manufacturer: </span><span style="text-align : left; font-size : 12px; ">Xiaomi</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Model: </span><span style="text-align : left; font-size : 12px; ">Redmi Note 8</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Type: </span><span style="text-align : left; font-size : 12px; ">ANDROID</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Version: </span><span style="text-align : left; font-size : 12px; ">11</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Source: </span><span style="text-align : left; font-size : 12px; ">DL</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>4a50c6ce3a68468a893c3a222c11bf5d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action1</Name>
+    <Description />
+    <StartTime>2024-05-31 16:53:33</StartTime>
+    <Duration>129</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>f11f9ac7376042498d4c6766ed9f357c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-05-31 16:53:33</StartTime>
+    <Duration>129</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>306f079e70cc4bf4a56594e5acb8aa0c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>SOF_QR</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>23.4</ToolVersion>
+    <ToolVersionStringLiteral>23.4</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-05-31 16:53:30</StartTime>
+    <Duration>132</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <ParallelRunnerEnvInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ID>37a5cc0a</ID>
+        <Manufacturer>Xiaomi</Manufacturer>
+        <Model>Redmi Note 8</Model>
+        <OsType>ANDROID</OsType>
+        <OsVersion>11</OsVersion>
+        <DesktopBrowser />
+        <ErrorMessage />
+      </ParallelRunnerEnvInfo>
+      <IconKey>86e393a5384148f6a4f4550d377c1d3d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+07:00:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ADMIN</User>
+      <CpuInfo>Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16383</TotalMemory>
+      <HostName>DESKTOP-J69HGVA</HostName>
+      <OSInfo>Windows 10 22H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res1</ResultName>
+    <RunStartTime>2024-05-31 16:53:30</RunStartTime>
+    <Timezone>+07:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>23.4</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>23.4</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

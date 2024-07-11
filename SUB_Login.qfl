@@ -1,0 +1,18 @@
+﻿Public SUB_Login
+Set sSUB_Login = new SUB_Login
+
+Class sSUB_Login
+	Sub CheckLogin
+		With Device("ostype:=IOS","id:=00008101-001C34E83A82001E").App("identifier:=com.cimbniaga.CIMB.Revamp.RELEASE","instrumented:=false")
+			'In this label, using 1 property, able to execute the object
+			.MobileLabel("text:=Login atau buat rekening pertama").Tap
+			wait(2)
+			'In this button, using 1 property, unable to execute the object
+		'	.MobileButton("text:=Login").Tap
+			'have to use more than 1 property to be able to execute the object
+			.MobileButton("text:=Login","nativeclass:=XCUIElementTypeButton").Tap
+			'In this label, using 1 property, not able to execute the object
+		'	.MobileLabel("text:=Login").Tap
+		End With
+	End Sub
+End Class

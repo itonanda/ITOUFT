@@ -1,0 +1,114 @@
+﻿Public SUB_SOF
+Set SUB_SOF = new sSUB_SOF
+
+Class sSUB_SOF
+	function GetUUID
+		Set pShell = CreateObject("WScript.Shell")
+		Set pCommandUUID = pShell.Exec("cmd /C cd ""C:\Program Files\Digital Lab Lite for Local Devices\server\android-sdk-windows\platform-tools"" && adb devices -l")
+		LineNumber = 1
+		Do While Not pCommandUUID.StdOut.AtEndOfStream
+			UUID = pCommandUUID.StdOut.ReadLine()
+			If LineNumber = 2 Then
+				UUID = trim(split(UUID," ")(0))
+				Exit do
+			End If
+			LineNumber = LineNumber+1
+		loop
+		GetUUID = UUID
+	End function
+	
+	Sub SOFDOF
+		UUID = "id:=" & GetUUID
+		'with Device("id:=21306e453e027ece","ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+		with Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+			getmcindex = 102 'Samsung S9
+			plus = 7
+			getBalance = 0
+			For Iterator = 1 To 3
+				If Iterator>1 Then
+					getmcindex = getmcindex + plus
+				End If
+				MsgBox getmcindex
+				SetMcindex = "mcindex:=" & getmcindex
+		'		.MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).Highlight
+				'getBalance = Device("id:=21306e453e027ece","ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).GetROProperty("text")
+				RetrieveMcindex = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount").GetROProperty("mcindex")
+				getBalance = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).GetROProperty("text")
+				MsgBox getBalance
+				If getBalance="5,000" Then
+					.MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).Tap
+					Exit for
+				End If
+				getBalance = 0
+				
+			Next
+		end with
+	End Sub
+	
+	function SOFDOFQR
+		UUID = "id:=" & GetUUID
+		'with Device("id:=21306e453e027ece","ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+		with Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+'			getmcindex = 12 ''user mate03
+			getmcindex = 10 ''user automate4
+			plus = 9
+			getBalance = 0
+			CustomText = "text:=XTRA SAVERS.*"
+			'Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof").Exist(1)
+			For Iterator = 1 To 3
+				If Iterator>1 Then
+					getmcindex = getmcindex + plus
+				End If
+				CheckExist = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof").Exist(1)
+'				CheckExist = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel(CustomText,"index:=1","resourceid:=tv_balance_sof").
+				
+				If CheckExist = false Then
+					Exit function
+				End If
+				
+				MsgBox getmcindex
+				SetMcindex = "mcindex:=" & getmcindex
+		'		.MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).Highlight
+				'getBalance = Device("id:=21306e453e027ece","ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).GetROProperty("text")
+				RetrieveMcindex = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof").GetROProperty("mcindex")
+				MsgBox RetrieveMcindex '-> value empty
+				getBalance = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof",SetMcindex).GetROProperty("text")
+				MsgBox getBalance
+'				If getBalance="5,000" Then
+'					.MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_amount",SetMcindex).Tap
+'					Exit for
+'				End If
+				getBalance = 0
+				
+			Next
+		end with
+	End function
+	
+	function SOFDOFQR_Simple
+		UUID = "id:=" & GetUUID
+		'with Device("id:=21306e453e027ece","ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+		with Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true")
+'			getmcindex = 12 ''user mate03
+			getmcindex = 10 ''user automate4
+			plus = 9
+			getBalance = 0
+			CustomText = "text:=XTRA SAVERS.*"
+			for Iterator = 1 To 3
+				If Iterator>1 Then
+					getmcindex = getmcindex + plus
+				End If
+				SetMcindex = "mcindex:=" & getmcindex
+				
+				RetrieveMcindex = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof").GetROProperty("mcindex")
+				MsgBox RetrieveMcindex '-> value empty
+				
+				getBalance = Device(UUID,"ostype:=ANDROID").App("identifier:=id.co.cimbniaga.mobile.android.release","instrumented:=true").MobileLabel("nativeclass:=com.google.android.material.textview.MaterialTextView","resourceid:=tv_balance_sof",SetMcindex).GetROProperty("text")
+				MsgBox getBalance
+
+				getBalance = 0
+				
+			Next
+		end with
+	End function
+	 
+End Class
