@@ -1,0 +1,4 @@
+#UFT ignore
+*.lck
+*/Res*
+#end UFT ignore

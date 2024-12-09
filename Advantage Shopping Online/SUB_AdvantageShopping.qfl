@@ -1,0 +1,107 @@
+﻿Public SUB_AdvantageShopping
+Set SUB_AdvantageShopping = new sSUB_AdvantageShopping
+xDevice = "ostype:=ANDROID"
+xAppIdentifier = "identifier:=com.Advantage.aShopping"
+xInstrumented = "instrumented:=false"
+xMainMenu = "resourceid:=com.Advantage.aShopping:id/imageViewMenu"
+	
+	
+Class sSUB_AdvantageShopping
+'	username = "itouser"
+'	password = "Axent123"
+	Function Login(username,password)
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileObject(xMainMenu).Tap
+			.MobileLabel("text:=LOGIN").Tap
+			.MobileLabel("text:=USER NAME").Tap
+			Device(xDevice).EnterKeys 0,username
+			.MobileLabel("text:=PASSWORD").Tap
+			Device(xDevice).EnterKeys 0,password
+			.MobileButton("text:=LOGIN").Tap
+		End With
+	End Function
+	
+	Function ProductSearch(SearchProduct)
+		'Search Product
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+'			SearchProduct = "HP S9500 BLUETOOTH"
+			.MobileEdit("text:=Search").Set SearchProduct
+			.MobileObject("resourceid:=com.Advantage.aShopping:id/imageViewSearch").Tap
+			wait(2)
+			'click product
+			xProduct = "text:=" & SearchProduct & ".*"
+			xResultProduct = "resourceid:=com.Advantage.aShopping:id/textViewProductName"
+			.MobileLabel(xProduct,xResultProduct).Tap
+		End With
+	End Function
+	
+	Function AddToCart
+		'Add to Cart
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileButton("text:=ADD TO CART").Tap
+		end with	
+	End Function
+	
+	Function ClickCart
+		'Click Icon Cart
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileObject("resourceid:=com.Advantage.aShopping:id/imageViewCart").Tap
+		end with	
+	End Function
+	
+	Function CheckOut
+		'Click Checkout
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileButton("text:=CHECKOUT.*").Tap
+		end with
+	End Function
+	
+	
+	'Input Payment Method
+	'With Device(xDevice).App(xAppIdentifier, xInstrumented)
+	'	xPreferredPayment = "text:=Preferred payment was not specified"
+	'	CheckExist = .MobileLabel(xPreferredPayment).Exist(1)
+	'	If CheckExist Then
+	'		.MobileLabel(xPreferredPayment).Tap
+	'		CardNumber = "5425233430109903"
+	'		CVV = "123"
+	'		CardHolderName = "ITO"
+	'		
+	'		
+	'	End If
+	'end with
+	
+	Function PayNow
+		'Click PAY NOW
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileButton("text:=PAY NOW").Tap
+		end with	
+	End Function
+	
+	Function ValidateOrderPayment
+		'Validate Order Payment
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			xResource = "resourceid:=com.Advantage.aShopping:id/textViewCode"
+			xOrderPaymentText= "text:=Order Payment"
+			CheckExist = .MobileLabel(xOrderPaymentText,xResource).Exist
+			
+			GetTrackNo = .MobileLabel("text:=Your tracking number is.*").GetROProperty("text")
+			GetOrderNo = .MobileLabel("text:=Your order number is.*").GetROProperty("text")
+			OrderPaymentDesc = "Order Payment " & vbCrlf & GetTrackNo & vbCrlf & GetOrderNo
+			
+			Reporter.ReportEvent micPass,"Order Payment",OrderPaymentDesc
+			
+			'Clicl Close
+			.MobileObject("resourceid:=com.Advantage.aShopping:id/imageViewCloseDialog").Tap
+		end with	
+	End Function
+	
+	Function SignOut
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileObject(xMainMenu).Tap
+			.MobileLabel("text:=SIGN OUT").Tap
+			.MobileButton("text:=YES").Tap
+		end with 
+	
+	End Function
+	End Class	
