@@ -1,0 +1,31 @@
+﻿Public SUB_Login
+Set SUB_Login = new sSUB_Login
+xDevice = "ostype:=ANDROID"
+xAppIdentifier = "identifier:=com.Advantage.aShopping"
+xInstrumented = "instrumented:=false"
+xMainMenu = "resourceid:=com.Advantage.aShopping:id/imageViewMenu"
+	
+Class sSUB_Login
+'	username = "itouser"
+'	password = "Axent123"
+	Function Login(username,password)
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileObject(xMainMenu).Tap
+			.MobileLabel("text:=LOGIN").Tap
+			.MobileLabel("text:=USER NAME").Tap
+			Device(xDevice).EnterKeys 0,username
+			.MobileLabel("text:=PASSWORD").Tap
+			Device(xDevice).EnterKeys 0,password
+			.MobileButton("text:=LOGIN").Tap
+		End With
+	End Function
+	
+	Function SignOut
+		With Device(xDevice).App(xAppIdentifier, xInstrumented)
+			.MobileObject(xMainMenu).Tap
+			.MobileLabel("text:=SIGN OUT").Tap
+			.MobileButton("text:=YES").Tap
+		end with 
+	
+	End Function
+End Class	

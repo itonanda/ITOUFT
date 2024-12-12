@@ -1,0 +1,8 @@
+﻿Public SUB_Global
+Set SUB_Global = new sSUB_Global
+xDevice = "ostype:=ANDROID"
+xAppIdentifier = "identifier:=com.Advantage.aShopping"
+xInstrumented = "instrumented:=false"
+xMainMenu = "resourceid:=com.Advantage.aShopping:id/imageViewMenu"
+username = "itouser"
+password = "Axent123"
