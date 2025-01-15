@@ -14,6 +14,7 @@ Class sSUB_Login
 			.MobileLabel("text:=LOGIN").Tap
 			.MobileLabel("text:=USER NAME").Tap
 			Device(xDevice).EnterKeys 0,username
+'			.EnterKeys 0,username
 			.MobileLabel("text:=PASSWORD").Tap
 			Device(xDevice).EnterKeys 0,password
 			.MobileButton("text:=LOGIN").Tap

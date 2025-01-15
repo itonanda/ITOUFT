@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\Users\\ADMIN\\Documents\\ITOUFT\\Advantage Shopping Online\\Test\\Res2',namePairs:[]}]};
